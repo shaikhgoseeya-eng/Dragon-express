@@ -1,0 +1,179 @@
+/* menu.css — imports main homepage styles then applies menu-specific rules */
+@import url("../style/style.css");
+
+/* --- PAGE BACKGROUND OVERRIDE (so boxes never blend) --- */
+/* choose a neutral that makes red & beige pop */
+body {
+  background: whitesmoke; !important; /* deep charcoal — will NOT affect boxed colors */
+  color: var(--cream);
+}
+
+/* Prevent the fixed header from overlapping the menu header */
+.menu-header {
+    margin-top: 80px; /* height of the fixed header */
+    height: 45vh;
+    background-image: url("../web\ images/menubg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F9EBD7;
+    margin: 0;
+}
+
+.menu-header p {
+    font-size: 20px;
+    color: #F9EBD7;
+    margin-top: 8px;
+}
+
+/* MENU PAGE STYLES */
+.menu-page {
+    width: 90%;
+    margin: 40px auto;
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 0 22px rgba(200, 128, 128, 0.12);
+    /* IMPORTANT: ensure menu boxes are opaque so body doesn't show through */
+    background-clip: padding-box;
+}
+
+/* Background variants — SOLID, with !important so body doesn't change them */
+.beige-page {
+    background: var(--beige) !important;
+}
+
+.red-page {
+    background: #B80F1A !important;
+    color: #f8eede;
+}
+
+/* MENU SECTIONS */
+.menu-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 25px auto;
+    padding: 10px 0;
+    min-height: 150px;
+}
+
+/* alternating layout helper (only applies if you add the class) */
+.right-img {
+    flex-direction: row-reverse;
+}
+
+.left-img img { margin-right: 22px; }
+.right-img img { margin-left: 22px; }
+
+/* IMAGE STYLE */
+.menu-section img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid var(--gold);
+}
+
+/* TEXT BLOCK */
+.menu-section .text {
+    max-width: 55%;
+}
+
+.menu-section .text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #8b1e1e;
+    margin-bottom: 8px;
+}
+
+/* red page titles */
+.red-page .text h2 {
+    color: var(--gold);
+}
+
+.menu-section .text p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+    color: #5a463a;
+    margin-bottom: 10px;
+}
+
+/* red page description */
+.red-page .text p {
+    color: #f8eede;
+}
+
+/* DISH LIST */
+.dish-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dish-list li {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px;
+    color: #7A1F0F;
+    padding: 4px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.dish-list li:hover {
+    color: #b43a23;
+    text-decoration: underline;
+    transform: translateX(4px);
+}
+
+/* Ensure red page text readable */
+.red-page .text h2 {
+    color: var(--gold) !important;
+}
+
+.red-page .text p,
+.red-page .text ul li {
+    color: #F9EBD7 !important;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+    background: #b80f0f;
+    padding: 40px 8% 20px;
+    color: #F9EBD7;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #F9EBD7;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.9;
+}

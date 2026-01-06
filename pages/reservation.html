@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../web images/favicon.jpg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet" />
+  <!-- KEEP menu.css as the page stylesheet (it will import your main style.css) -->
+  <link rel="stylesheet" href="../style/reservation.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>reservation| Chinese Restaurant</title>
+</head>
+<body>
+
+  <!-- ======= HEADER: EXACTLY THE SAME AS HOME (Menu active) ======= -->
+  <header>  
+    <div class="left">
+      <div class="logo">
+        <img src="../web images/logo.png" alt="">
+      </div>
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="toggle-icon">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </label>
+
+    <div class="right" id="navbar"> 
+        
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservation.html" class="org-btn">Reservation</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- ======= END HEADER ======= -->
+
+
+
+<!-- ==================== HEADER SECTION ==================== -->
+<section class="reservation-header">
+    <h1>Reserve Your Table</h1>
+    <p>Authentic Chinese dining experience, crafted with tradition.</p>
+</section>
+
+
+
+<!-- ==================== RESERVATION FORM ==================== -->
+<section class="reservation-section">
+
+    <div class="reservation-box">
+
+        <h2>Book Your Table</h2>
+
+        <form class="reserve-form">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-flex">
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Time</label>
+                    <input type="time" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>No. of Guests</label>
+                <select required>
+                    <option value="">Select guests</option>
+                    <option>1 Person</option>
+                    <option>2 People</option>
+                    <option>3 People</option>
+                    <option>4 People</option>
+                    <option>5 People</option>
+                    <option>6+ Group</option>
+                </select>
+            </div>
+
+            <button type="submit" class="reserve-btn">Confirm Reservation</button>
+
+        </form>
+    </div>
+
+
+
+    <!-- BOOKING SUMMARY CARD -->
+    <div class="summary-card">
+        <h3>Why Book With Us?</h3>
+
+        <ul>
+            <li>✔ Guaranteed seating</li>
+            <li>✔ Priority service</li>
+            <li>✔ Special arrangements for groups</li>
+            <li>✔ Perfect ambience for family & celebrations</li>
+        </ul>
+
+        <p class="summary-bottom">We look forward to serving you!</p>
+    </div>
+
+</section>
+
+
+
+
+<!-- ==================== FOOTER (Universal Footer) ==================== -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h4>Dragon Express</h4>
+            <p>Authentic Chinese cuisine crafted with love.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="../index.html">Home</a>
+            <a href="../pages/menu.html">Menu</a>
+            <a href="../pages/about.html">About Us</a>
+            <a href="../pages/contact.html">Contact</a>
+            <a href="../pages/reservation.html">Reservation</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>📍 Mumbai, India</p>
+            <p>📞 +91 9876543210</p>
+            <p>📧 dragonexpress@gmail.com</p>
+           
+
+            
+        </div>
+        <body><div class= "logo">
+           <wa-icon name="instagram" family="brands"></wa-icon>
+ 
+    </div>
+
+    <p class="footer-bottom">© 2025 Dragon Express | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

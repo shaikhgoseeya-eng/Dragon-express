@@ -1,0 +1,201 @@
+/* menu.css — imports main homepage styles then applies menu-specific rules */
+@import url("../style/style.css");
+
+/* --- PAGE BACKGROUND OVERRIDE (so boxes never blend) --- */
+/* choose a neutral that makes red & beige pop */
+body {
+  background: transparent; !important; /* deep charcoal — will NOT affect boxed colors */
+  color: var(--cream);
+}
+
+/* Prevent the fixed header from overlapping the menu header */
+
+.about-header {
+    margin-top: 80px; /* height of the fixed header */
+    height: 55vh;
+    background-image: url("../web\ images/nnaboutbg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #a61a1a; /* ← this changes ALL text inside */
+}
+
+.menu-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F9EBD7;
+    margin: 0;
+}
+
+.menu-header p {
+    font-size: 20px;
+    color: #F9EBD7;
+    margin-top: 8px;
+}
+
+
+
+.about-header h1 {
+    font-size: 65px;   /* Bigger title */
+    letter-spacing: 2px;
+}
+
+.story-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+/* STORY SECTION — TEXT MORE READABLE */
+.our-story {
+    background: #fdecd2;
+    padding: 80px 10%;
+}
+
+.our-story h2 {
+    font-size: 40px;
+    color: #a61a1a;
+    margin-bottom: 20px;
+}
+
+.our-story p {
+    color: #5a2b00; /* FIXED READABILITY */
+    font-size: 21px;
+    line-height: 1.85;
+}
+
+/* WHY CHOOSE US (RED SECTION) */
+.choose-us {
+    background: #b80f0f;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.choose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.choose-box {
+    background: #f7e7c4;
+    color: #9d1d1d;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.choose-box:hover {
+    transform: translateY(-8px);
+}
+
+/* BIG EMOJI ICONS */
+.icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* CHEF SECTION */
+.our-chefs {
+    background: #fdecd2;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.chef-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.chef-card img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #b80f0f;
+}
+
+.chef-card h4 {
+    margin-top: 15px;
+    color: #b80f0f;
+    font-size: 22px;
+}
+.chef-section {
+    background-color: #b60b0b;   /* Strong Chinese red */
+    padding: 80px 0;
+}
+
+.chef-section h2 {
+    color: #fff;                /* White text for readability */
+}
+
+.chef-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.chef-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    border: 5px solid #f6d9b3;  /* optional golden-beige border */
+}
+
+.chef-card img {
+    width: 100%;
+    border-radius: 15px
+}
+
+.our-chefs h2 {
+    color: #b60b0b;     /* strong Chinese red */
+    font-size: 2.5rem;  /* same size you have, safe */
+    font-weight: 700;   /* bold but clean */
+    text-align: center; /* keeps it centered */
+    margin-bottom: 30px;
+}
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+    background: #b80f0f;
+    padding: 40px 8% 20px;
+    color: #F9EBD7;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #F9EBD7;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.9;
+}

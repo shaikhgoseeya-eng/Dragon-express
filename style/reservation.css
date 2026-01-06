@@ -1,0 +1,161 @@
+/* menu.css — imports main homepage styles then applies menu-specific rules */
+@import url("../style/style.css");
+
+/* --- PAGE BACKGROUND OVERRIDE (so boxes never blend) --- */
+/* choose a neutral that makes red & beige pop */
+body {
+  background: whitesmoke; !important; /* deep charcoal — will NOT affect boxed colors */
+  color: var(--cream);
+}
+
+/* ---------------- HEADER ---------------- */
+
+.reservation-header {
+    margin-top: 80px;
+    height: 45vh;
+    background-image: url("../web images/reservationbg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #b80f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reservation-header h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.reservation-header p {
+    font-size: 20px;
+}
+
+
+
+/* ---------------- MAIN FORM ---------------- */
+
+.reservation-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 8%;
+    background: #F9EBD7;
+}
+
+.reservation-box {
+    background: white;
+    padding: 30px 35px;
+    width: 45%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 15%);
+}
+
+.reservation-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b80f0f;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #aa0000;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.form-flex {
+    display: flex;
+    gap: 15px;
+}
+
+.reserve-btn {
+    width: 100%;
+    padding: 14px;
+    background: #b80f0f;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.reserve-btn:hover {
+    background: #8f0000;
+}
+
+
+
+/* ---------------- SUMMARY CARD ---------------- */
+
+.summary-card {
+    background: #b80f0f;
+    padding: 35px;
+    width: 30%;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 20%);
+}
+
+.summary-card h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.summary-card ul {
+    margin-left: 15px;
+    line-height: 32px;
+}
+
+.summary-bottom {
+    margin-top: 15px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+
+
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+    background: #b80f0f;
+    padding: 40px 8% 20px;
+    color: #F9EBD7;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #F9EBD7;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.9;
+}
